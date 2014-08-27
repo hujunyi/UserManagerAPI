@@ -13,7 +13,8 @@ Things you may want to cover:
 
 run:
 
-```code
-bundle install
-rails s
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
 ```
